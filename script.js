@@ -39,8 +39,8 @@ function evaluarRespuestas() {
         }
     }
     let mensaje = "";
-        if (nota >= 9){
-            mensaje = "felicitaciones kike!!! t encontramos!!! sino sos kike aflojale a los mates culiado!!"
+    if (nota >= 9) {
+        mensaje = "felicitaciones kike!!! t encontramos!!! sino sos kike aflojale a los mates culiado!!"
     }else if (nota >= 7) {
         mensaje = "¡Excelente compa!!...usted sabe todo... ojo qc on un par d mates más lo invitan al sindicato";
     } else if (nota >= 4) {
@@ -50,7 +50,7 @@ function evaluarRespuestas() {
     }
 
     // Muestra la nota en el modal
-    document.getElementById("notaTexto").innerHTML = "Sacaste un: " + nota + mensaje;
+    document.getElementById("notaTexto").innerHTML = "Sacaste un: " +nota+"!!"+ " "+ mensaje;
 
     // Muestra el modal
     document.getElementById("myModal").style.display = "block";
