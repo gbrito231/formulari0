@@ -39,16 +39,18 @@ function evaluarRespuestas() {
         }
     }
     let mensaje = "";
-    if (nota >= 8) {
-        mensaje = "¡Excelente! Has obtenido una puntuación alta.";
+        if (nota >= 9){
+            mensaje = "felicitaciones kike!!! t encontramos!!! sino sos kike aflojale a los mates culiado!!"
+    }else if (nota >= 7) {
+        mensaje = "¡Excelente compa!!...usted sabe todo... ojo qc on un par d mates más lo invitan al sindicato";
     } else if (nota >= 4) {
-        mensaje = "¡Bien hecho! Tu puntuación es moderada.";
+        mensaje = "¡mmmm... ojo! lo voy a tener vigilado!!! usted es un posible topo!!.";
     } else {
-        mensaje = "¡Ánimo! Puedes mejorar en la próxima ocasión.";
+        mensaje = "¡JAAAA! maldito topo!! he dado contigo!!! ya tiene tus datos el sindicato";
     }
 
     // Muestra la nota en el modal
-    document.getElementById("notaTexto").innerHTML = "Tu nota es: " + nota + mensaje;
+    document.getElementById("notaTexto").innerHTML = "Sacaste un: " + nota + mensaje;
 
     // Muestra el modal
     document.getElementById("myModal").style.display = "block";
